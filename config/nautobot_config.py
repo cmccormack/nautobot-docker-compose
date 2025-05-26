@@ -35,10 +35,15 @@ CACHEOPS_REDIS = parse_redis_connection(redis_database=1)
 
 # Enable installed plugins. Add the name of each plugin to the list.
 # PLUGINS = ["nautobot_example_plugin"]
-PLUGINS = []
+PLUGINS = ["nautobot_example_plugin"]
 
 # Plugins configuration settings. These settings are used by various plugins that the user may have installed.
 # Each key in the dictionary is the name of an installed plugin and its value is a dictionary of settings.
 PLUGINS_CONFIG = {
     "nautobot_example_plugin": {},
 }
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8080", "https://localhost:8080"] 
+
+TIME_ZONE = "MST"
+USE_TZ = True

@@ -304,3 +304,5 @@ creds.env
 
 # Invoke overrides
 invoke.yml
+
+/clab-ceos-lab
